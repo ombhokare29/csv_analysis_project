@@ -1,0 +1,33 @@
+{% extends 'analysis/base.html' %}
+
+{% block title %}Analysis Results{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h1 class="card-title text-center">Data Analysis Results</h1>
+    </div>
+    <div class="card-body">
+        <h2>Summary Statistics</h2>
+        <div class="table-responsive">
+            {{ summary|safe }}
+        </div>
+        <br>
+
+        <h2>First Few Rows</h2>
+        <div class="table-responsive">
+            {{ head|safe }}
+        </div>
+        <br>
+
+        <h2>Missing Values</h2>
+        <div class="table-responsive">
+            {{ missing_values|safe }}
+        </div>
+        <br>
+
+        <h2>Visualization</h2>
+        <img src="{{ plot_url }}" alt="Data Visualization" class="img-fluid mt-3">
+    </div>
+</div>
+{% endblock %}

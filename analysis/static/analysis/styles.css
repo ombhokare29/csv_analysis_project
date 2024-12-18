@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;  /* Soft light background */
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2d3e50;  /* Darker shade for titles */
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff, #f0f4f8);  /* Subtle gradient */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    border: 1px solid #e3e6f0;  /* Light border for the container */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input[type="file"] {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;  /* Slightly off-white background */
+    font-size: 16px;
+    transition: border 0.3s ease-in-out;
+}
+
+form input[type="file"]:focus {
+    border-color: #007bff;  /* Blue border on focus */
+    background-color: #e9f7ff;  /* Light blue background */
+}
+
+form button {
+    padding: 12px;
+    background: linear-gradient(135deg, #007bff, #00d2ff);  /* Gradient button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #0056b3, #0088cc);  /* Darker hover effect */
+    transform: translateY(-2px);  /* Slight lift effect on hover */
+}
+
+form button:active {
+    transform: translateY(0);  /* Button press effect */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: #ffffff;  /* White background for the table */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    border: 1px solid #e3e6f0;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+table th {
+    background: #007bff;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;  /* Alternate row colors */
+}
+
+table tr:hover {
+    background-color: #f1f8ff;  /* Hover effect on rows */
+}
+
+/* Image Style */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    form {
+        gap: 12px;
+    }
+
+    form button {
+        font-size: 16px;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+}
